@@ -1,0 +1,52 @@
+<?php
+
+return [
+    'accepted' => 'El campo :attribute debe ser aceptado.',
+    'confirmed' => 'La confirmación de :attribute no coincide.',
+    'current_password' => 'La contraseña actual es incorrecta.',
+    'email' => 'El campo :attribute debe ser un correo electrónico válido.',
+    'exists' => 'El :attribute seleccionado no es válido.',
+    'file' => 'El campo :attribute debe ser un archivo.',
+    'image' => 'El campo :attribute debe ser una imagen.',
+    'in' => 'El :attribute seleccionado no es válido.',
+    'integer' => 'El campo :attribute debe ser un número entero.',
+    'max' => [
+        'file' => 'El campo :attribute no debe pesar más de :max kilobytes.',
+        'numeric' => 'El campo :attribute no debe ser mayor que :max.',
+        'string' => 'El campo :attribute no debe tener más de :max caracteres.',
+        'array' => 'El campo :attribute no debe tener más de :max elementos.',
+    ],
+    'mimes' => 'El campo :attribute debe ser un archivo de tipo: :values.',
+    'min' => [
+        'file' => 'El campo :attribute debe pesar al menos :min kilobytes.',
+        'numeric' => 'El campo :attribute debe ser al menos :min.',
+        'string' => 'El campo :attribute debe tener al menos :min caracteres.',
+        'array' => 'El campo :attribute debe tener al menos :min elementos.',
+    ],
+    'numeric' => 'El campo :attribute debe ser un número.',
+    'password' => [
+        'letters' => 'El campo :attribute debe contener al menos una letra.',
+        'mixed' => 'El campo :attribute debe contener al menos una mayúscula y una minúscula.',
+        'numbers' => 'El campo :attribute debe contener al menos un número.',
+        'symbols' => 'El campo :attribute debe contener al menos un símbolo.',
+        'uncompromised' => 'El :attribute apareció en una filtración de datos. Elige otro.',
+    ],
+    'required' => 'El campo :attribute es obligatorio.',
+    'string' => 'El campo :attribute debe ser texto.',
+    'unique' => 'El :attribute ya está registrado.',
+    'uploaded' => 'No se pudo subir :attribute.',
+
+    'attributes' => [
+        'name' => 'nombre',
+        'email' => 'correo electrónico',
+        'password' => 'contraseña',
+        'titulo' => 'título',
+        'telefono' => 'teléfono',
+        'bio' => 'biografía',
+        'sinopsis' => 'sinopsis',
+        'episodios' => 'episodios',
+        'estudio' => 'estudio',
+        'imagen' => 'imagen',
+        'poster' => 'póster',
+    ],
+];
