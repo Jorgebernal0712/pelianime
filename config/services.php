@@ -40,9 +40,9 @@ return [
         'url' => env('API_BASE_URL', rtrim(env('APP_URL', 'http://localhost'), '/').'/api'),
     ],
 
-    // Servicio web externo público (API no oficial de MyAnimeList)
-    'jikan' => [
-        'url' => env('JIKAN_URL', 'https://api.jikan.moe/v4'),
+    // Servicio web externo público (API GraphQL de AniList)
+    'anilist' => [
+        'url' => env('ANILIST_URL', 'https://graphql.anilist.co'),
     ],
 
 ];

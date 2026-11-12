@@ -30,7 +30,7 @@
         <div class="menu-title">Servicios web</div>
         <nav class="nav flex-column">
             <a class="nav-link {{ request()->routeIs('cliente-api.*') ? 'active' : '' }}" href="{{ route('cliente-api.index') }}"><i class="bi bi-plug"></i> Cliente API REST</a>
-            <a class="nav-link {{ request()->routeIs('jikan.*') ? 'active' : '' }}" href="{{ route('jikan.index') }}"><i class="bi bi-cloud-download"></i> Importar de Jikan</a>
+            <a class="nav-link {{ request()->routeIs('anilist.*') ? 'active' : '' }}" href="{{ route('anilist.index') }}"><i class="bi bi-cloud-download"></i> Importar de AniList</a>
         </nav>
 
         <div class="menu-title">Mi cuenta</div>

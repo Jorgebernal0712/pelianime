@@ -6,7 +6,7 @@
 <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
     <p class="text-muted mb-0">{{ $animes->count() }} animes registrados</p>
     <div class="d-flex gap-2">
-        <a href="{{ route('jikan.index') }}" class="btn btn-ghost btn-sm"><i class="bi bi-cloud-download"></i> Importar de Jikan</a>
+        <a href="{{ route('anilist.index') }}" class="btn btn-ghost btn-sm"><i class="bi bi-cloud-download"></i> Importar de AniList</a>
         <a href="{{ route('reportes.animes') }}" class="btn btn-ghost btn-sm"><i class="bi bi-file-earmark-pdf"></i> Descargar PDF</a>
         <a href="{{ route('animes.create') }}" class="btn btn-pa btn-sm"><i class="bi bi-plus-lg"></i> Nuevo anime</a>
     </div>

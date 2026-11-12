@@ -1,11 +1,11 @@
 <?php
 
+use App\Http\Controllers\AnilistController;
 use App\Http\Controllers\AnimeController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\PasswordResetController;
 use App\Http\Controllers\ClienteApiController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\JikanController;
 use App\Http\Controllers\PeliculaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReporteController;
@@ -78,6 +78,7 @@ Route::middleware('auth')->group(function () {
         Route::post('/token', [ClienteApiController::class, 'regenerarToken'])->name('token');
     });
 
-    Route::get('/jikan', [JikanController::class, 'index'])->name('jikan.index');
-    Route::post('/jikan/importar', [JikanController::class, 'importar'])->name('jikan.importar');
+    // Servicio web externo (AniList, API GraphQL)
+    Route::get('/anilist', [AnilistController::class, 'index'])->name('anilist.index');
+    Route::post('/anilist/importar', [AnilistController::class, 'importar'])->name('anilist.importar');
 });

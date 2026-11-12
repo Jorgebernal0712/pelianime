@@ -40,7 +40,14 @@ class Anime extends Model
             return null;
         }
 
-        // Puede ser un archivo subido o una URL externa (importado desde Jikan)
-        return str_starts_with($this->imagen, 'http') ? $this->imagen : Storage::url($this->imagen);
+        // Puede ser un archivo subido o una URL externa (importado desde AniList)
+        if (str_starts_with($this->imagen, 'http')) {
+            return $this->imagen;                       // URL externa (p. ej. importado de AniList)
+        }
+        if (str_starts_with($this->imagen, 'img/')) {
+            return asset($this->imagen);                // imagen de ejemplo incluida en public/img
+        }
+
+        return Storage::url($this->imagen);             // imagen subida por el usuario
     }
 }

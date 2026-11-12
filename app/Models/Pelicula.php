@@ -38,6 +38,13 @@ class Pelicula extends Model
             return null;
         }
 
-        return str_starts_with($this->poster, 'http') ? $this->poster : Storage::url($this->poster);
+        if (str_starts_with($this->poster, 'http')) {
+            return $this->poster;                       // URL externa (p. ej. importado de AniList)
+        }
+        if (str_starts_with($this->poster, 'img/')) {
+            return asset($this->poster);                // imagen de ejemplo incluida en public/img
+        }
+
+        return Storage::url($this->poster);             // imagen subida por el usuario
     }
 }
