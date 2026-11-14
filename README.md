@@ -187,13 +187,4 @@ git push -u origin main
 El `.gitignore` ya excluye `vendor/` y `.env` (nunca subir el `.env` con contraseñas).
 Agreguen a los otros integrantes en **Settings → Collaborators** para que cada uno haga commits.
 
----
 
-## 7. Guion sugerido para la sustentación (15 min)
-
-| Min | Quién | Qué mostrar |
-|---|---|---|
-| 0-3 | Integrante 1 | Landing, registro, login, olvidé mi contraseña (mostrar el correo), rutas protegidas (entrar a `/dashboard` sin sesión) |
-| 3-8 | Integrante 2 | Dashboard (usuario activo, gráficas), CRUD de películas y animes con imágenes, DataTables (buscar/ordenar), PDF, editar perfil |
-| 8-13 | Integrante 3 | API en Postman (login → token → GET/POST/PUT/DELETE, 401 sin token), *Cliente API REST* (cabeceras y respuesta), importar desde Jikan |
-| 13-15 | Todos | Migraciones/modelos/relaciones en el código, GitHub y preguntas |
