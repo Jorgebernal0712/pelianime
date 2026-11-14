@@ -4,7 +4,7 @@ Proyecto académico en **Laravel 12** para administrar un catálogo de **pelícu
 personalizados, recuperación de contraseña, CRUD con imágenes, listados con DataTables, gráficas con Chart.js,
 reportes PDF, API REST protegida con tokens (Sanctum) y consumo de servicios web (API propia + Jikan/MyAnimeList).
 
-**Equipo:** Integrante 1 · Integrante 2 · Integrante 3
+**Equipo:** MARIANA · JUAN MANUEL ·JORGE BERNAL
 **Sitio publicado:** `https://TU-PROYECTO.up.railway.app` · **Repositorio:** `https://github.com/USUARIO/pelianime`
 
 ---
@@ -24,7 +24,7 @@ No se necesita Node/npm: Bootstrap, DataTables y Chart.js se cargan por CDN.
 
 ```bash
 # 1. Clonar (o descomprimir el .zip) y entrar a la carpeta
-git clone https://github.com/USUARIO/pelianime.git
+git clone (https://github.com/Jorgebernal0712/pelianime)
 cd pelianime
 
 # 2. Instalar dependencias de PHP
